@@ -1,8 +1,6 @@
 import requests
 import os
 
-uid = os.environ.get('uid);
-
 headers = {
     ':authority': 'www.pointsprizes.com',
     ':method': 'GET',
@@ -23,6 +21,7 @@ headers = {
 }
 
 headers.cookie = os.environ.get('cookie');
+uid = os.environ.get('uid);
 
 url = 'https://www.pointsprizes.com/account/earn/poll/' + uid + "?account_earn_poll_submit=1&poll_source=Not%20Telling&poll_source_website=&poll_site_speed=5&poll_customer_service=5&poll_ease_of_use=5&poll_feedback="
 
