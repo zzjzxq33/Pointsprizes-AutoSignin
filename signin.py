@@ -2,10 +2,6 @@ import requests
 import os
 
 headers = {
-    ':authority': 'www.pointsprizes.com',
-    ':method': 'GET',
-    ':path': '',
-    ':scheme': 'https',
     'accept': '*/*',
     'accept-encoding': 'gzip, deflate, br',
     'accept-language': 'zh-CN,zh;q=0.9',
@@ -22,7 +18,6 @@ headers = {
 
 headers["cookie"] = os.environ.get('cookie');
 uid = os.environ.get('uid');
-headers[":path"] = '/account/earn/poll/' + uid + '?account_earn_poll_submit=1&poll_source=Not%20Telling&poll_source_website=&poll_site_speed=5&poll_customer_service=5&poll_ease_of_use=5&poll_feedback='
 
 url = 'https://www.pointsprizes.com/account/earn/poll/' + uid + "?account_earn_poll_submit=1&poll_source=Not%20Telling&poll_source_website=&poll_site_speed=5&poll_customer_service=5&poll_ease_of_use=5&poll_feedback="
 
