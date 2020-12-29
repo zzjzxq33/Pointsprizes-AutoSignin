@@ -4,7 +4,7 @@ import os
 headers = {
     ':authority': 'www.pointsprizes.com',
     ':method': 'GET',
-    ':path': '/account/earn/poll/14987752?account_earn_poll_submit=1&poll_source=Not%20Telling&poll_source_website=&poll_site_speed=5&poll_customer_service=5&poll_ease_of_use=5&poll_feedback=',
+    ':path': '',
     ':scheme': 'https',
     'accept': '*/*',
     'accept-encoding': 'gzip, deflate, br',
@@ -20,8 +20,9 @@ headers = {
     'x-requested-with': 'XMLHttpRequest'
 }
 
-headers.cookie = os.environ.get('cookie');
+headers["cookie"] = os.environ.get('cookie');
 uid = os.environ.get('uid');
+headers[":path"] = '/account/earn/poll/' + uid + '?account_earn_poll_submit=1&poll_source=Not%20Telling&poll_source_website=&poll_site_speed=5&poll_customer_service=5&poll_ease_of_use=5&poll_feedback='
 
 url = 'https://www.pointsprizes.com/account/earn/poll/' + uid + "?account_earn_poll_submit=1&poll_source=Not%20Telling&poll_source_website=&poll_site_speed=5&poll_customer_service=5&poll_ease_of_use=5&poll_feedback="
 
