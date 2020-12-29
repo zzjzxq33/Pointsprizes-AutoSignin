@@ -23,3 +23,11 @@ url = 'https://www.pointsprizes.com/account/earn/poll/' + uid + "?account_earn_p
 
 res = requests.get(url, headers=headers)
 print(res.text)
+
+headers["cookie"] = os.environ.get('cookie2');
+uid = os.environ.get('uid2');
+
+url = 'https://www.pointsprizes.com/account/earn/poll/' + uid2 + "?account_earn_poll_submit=1&poll_source=Not%20Telling&poll_source_website=&poll_site_speed=5&poll_customer_service=5&poll_ease_of_use=5&poll_feedback="
+
+res = requests.get(url, headers=headers)
+print(res.text)
