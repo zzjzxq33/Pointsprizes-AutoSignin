@@ -10,7 +10,7 @@ headers = {
     'accept-encoding': 'gzip, deflate, br',
     'accept-language': 'zh-CN,zh;q=0.9',
     'cookie': '', 
-    'referer: 'https://www.pointsprizes.com/account',
+    'referer': 'https://www.pointsprizes.com/account',
     'sec-ch-ua': '%22Google%20Chrome%22%3Bv%3D%2287%22%2C%20%22%20Not%3BA%20Brand%22%3Bv%3D%2299%22%2C%20%22Chromium%22%3Bv%3D%2287%22',
     'sec-ch-ua-mobile': '?0',
     'sec-fetch-dest': 'empty',
