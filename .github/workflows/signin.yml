@@ -26,6 +26,6 @@ jobs:
         env:
           cookie: ${{ secrets.cookie }}
           uid: ${{ secrets.uid }}
-          cookie2: ${{ secrets.cookie }}
-          uid2: ${{ secrets.uid }}
+          cookie2: ${{ secrets.cookie2 }}
+          uid2: ${{ secrets.uid2 }}
 
