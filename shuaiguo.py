@@ -8,7 +8,7 @@ headers = {
     'X-Requested-With': 'XMLHttpRequest',
     'sec-ch-ua-mobile': '?0',
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36',
-    'Accept': '*/*'',
+    'Accept': '*/*',
     'Sec-Fetch-Site': 'same-origin',
     'Sec-Fetch-Mode': 'cors',
     'Sec-Fetch-Dest': 'empty',
