@@ -19,5 +19,5 @@ headers = {
 }
 
 headers['Cookie'] = os.environ.get('shuaiguo_cookie')
-res.requests.get('https://shuaiguo.club/plugin.php?id=dsu_amupper&ppersubmit=true&formhash=f9e1cba4&infloat=yes&handlekey=dsu_amupper&inajax=1&ajaxtarget=fwin_content_dsu_amupper',headers = headers)
+res = requests.get('https://shuaiguo.club/plugin.php?id=dsu_amupper&ppersubmit=true&formhash=f9e1cba4&infloat=yes&handlekey=dsu_amupper&inajax=1&ajaxtarget=fwin_content_dsu_amupper',headers = headers)
 print(res.text)
