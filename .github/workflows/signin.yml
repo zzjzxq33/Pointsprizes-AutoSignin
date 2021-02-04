@@ -28,8 +28,8 @@ jobs:
           uid: ${{ secrets.uid }}
           cookie2: ${{ secrets.cookie2 }}
           uid2: ${{ secrets.uid2 }}
-#      - name: Run shuaiguo.py
-#        run: python shuaiguo.py
-#        env:
-#          shuaiguo_cookie: ${{ secrets.shuaiguo_cookie }}
+      - name: Run shuaiguo.py
+        run: python shuaiguo.py
+        env:
+          shuaiguo_cookie: ${{ secrets.shuaiguo_cookie }}
 
