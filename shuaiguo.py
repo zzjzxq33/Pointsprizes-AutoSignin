@@ -12,13 +12,13 @@ headers = {
     'Sec-Fetch-Site': 'same-origin',
     'Sec-Fetch-Mode': 'cors',
     'Sec-Fetch-Dest': 'empty',
-    'Referer': 'https://shuaiguo.club/home.php?mod=space&do=notice&view=system',
+    'Referer': 'https://shuaiguo.club/home.php?mod=task',
     'Accept-Encoding': 'gzip, deflate, br',
     'Accept-Language': 'zh-CN,zh;q=0.9',
     'Cookie': ''
 }
 
 headers['Cookie'] = os.environ.get('shuaiguo_cookie')
-res = requests.get('https://shuaiguo.club/plugin.php?id=dsu_amupper&ppersubmit=true&formhash=f9e1cba4&infloat=yes&handlekey=dsu_amupper&inajax=1&ajaxtarget=fwin_content_dsu_amupper',headers = headers)
+res = requests.get('https://shuaiguo.club/home.php?mod=task&do=apply&id=1',headers = headers)
 
 print(res.text)
