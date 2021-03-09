@@ -22,3 +22,5 @@ headers['Cookie'] = os.environ.get('shuaiguo_cookie')
 res = requests.get('https://shuaiguo.club/home.php?mod=task&do=apply&id=1',headers = headers)
 
 print(res.text)
+res2 = requests.get('https://shuaiguo.club/home.php?mod=task&do=draw&id=1 ',headers = headers)
+print(res2.text)
