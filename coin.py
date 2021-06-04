@@ -15,7 +15,6 @@ vlist_headers = {
 	'Cache-Control': 'max-age=0',
 	'TE': 'Trailers'
 }
-
 PostCoin_headers = {
 	'Host': 'api.bilibili.com',
 	'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0',
@@ -36,5 +35,5 @@ vlist_text = json.loads(res.text)
 print(vlist_text['data']['list']['vlist'][0]['aid'])
 print(vlist_text['data']['list']['vlist'][1]['aid'])
 print(vlist_text['data']['list']['vlist'][2]['aid'])
-
+#powered by woshoxxx
 
