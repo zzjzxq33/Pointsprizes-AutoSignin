@@ -22,7 +22,7 @@ headers = {
 }
 
 headers['Cookie'] = os.environ.get('shuaiguo_cookie')
-res = requests.get('https://shuaiguo.club/home.php?mod=task&do=apply&id=1',headers = headers)
+res = requests.get('https://bbs.sgguo.com/k_misign-sign.html?operation=qiandao&format=global_usernav_extra&formhash=690ffce7&inajax=1&ajaxtarget=k_misign_topb',headers = headers)
 
 print(res.text)
 time.sleep(10)
