@@ -3,7 +3,7 @@ name: Signin
 on: 
   push:
   schedule:
-    - cron: '30 5 * * *'
+    - cron: '30 12 * * *'
 
 jobs:
   Signin:
